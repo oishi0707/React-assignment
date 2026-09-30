@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.header {
+  background: #263238;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.header p {
+  margin: 8px 0 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employee-count {
+  background: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+form button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #263238;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #455a64;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.filters input {
+  flex: 1;
+}
+
+.filters select {
+  width: 220px;
+}
+
+.employee-list h2 {
+  margin-bottom: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.employee-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-card h3 {
+  margin-top: 0;
+  color: #263238;
+}
+
+.employee-card p {
+  line-height: 1.5;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-buttons button {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #455a64;
+  color: white;
+}
+
+.card-buttons .delete-btn {
+  background: #d32f2f;
+}
+
+.card-buttons button:hover {
+  opacity: 0.85;
+}
+
+.employee-card input,
+.employee-card select,
+.employee-card textarea {
+  margin-bottom: 10px;
+}
+
+.no-data {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  background: #263238;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .top-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters select {
+    width: 100%;
+  }
+}

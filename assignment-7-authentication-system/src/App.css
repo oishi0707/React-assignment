@@ -1,0 +1,170 @@
+.navbar {
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links button {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.welcome {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-box,
+.login-box {
+  background: white;
+  width: 400px;
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box form,
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-box input,
+.form-box textarea,
+.login-box input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form-box textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-box button,
+.login-box button {
+  padding: 12px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-box button:hover,
+.login-box button:hover {
+  background: #333;
+}
+
+.login-container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.success {
+  color: green;
+  text-align: center;
+}
+
+.strength {
+  font-weight: bold;
+}
+
+.weak {
+  color: red;
+}
+
+.medium {
+  color: orange;
+}
+
+.strong {
+  color: green;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

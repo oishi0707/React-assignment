@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  padding: 20px;
+}
+
+.weather-container {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 13px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #3730a3;
+}
+
+.weather-card {
+  margin-top: 20px;
+}
+
+.weather-card h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  width: 100px;
+}
+
+.weather-card h3 {
+  font-size: 48px;
+  margin: 5px;
+  color: #222;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.info-box {
+  padding: 18px;
+  background: #f3f4f6;
+  border-radius: 12px;
+}
+
+.info-box span {
+  font-size: 25px;
+}
+
+.info-box p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.info-box strong {
+  font-size: 18px;
+}
+
+.loading {
+  margin: 30px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  border: 5px solid #ddd;
+  border-top: 5px solid #4f46e5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  padding: 15px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .weather-info {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}

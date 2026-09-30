@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  background-color: #243b55;
+  color: white;
+  padding: 35px 20px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+/* Main */
+
+main {
+  padding: 40px 20px;
+}
+
+/* Sort Button */
+
+.sort-button {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #243b55;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sort-button:hover {
+  background-color: #141e30;
+}
+
+/* Student Cards */
+
+.student-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.student-card {
+  width: 280px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.student-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.student-card h2 {
+  margin-bottom: 15px;
+}
+
+.student-card p {
+  margin: 8px 0;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #243b55;
+  color: white;
+}
